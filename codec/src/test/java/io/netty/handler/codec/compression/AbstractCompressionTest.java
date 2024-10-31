@@ -33,6 +33,7 @@ public abstract class AbstractCompressionTest {
     private static void fillArrayWithCompressibleData(byte[] array) {
         for (int i = 0; i < array.length; i++) {
             array[i] = i % 4 != 0 ? 0 : (byte) rand.nextInt();
+            System.out.println(array[i]);
         }
     }
 }
